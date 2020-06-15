@@ -2,17 +2,17 @@
   "name": "templates",
   "version": "0.1.0",
   "scripts": {
-    "build-contract": "solc contracts/Gravity.sol --abi -o abis --overwrite && solc contracts/Gravity.sol --bin -o bin --overwrite",
     "create": "graph create pooltogether/templates --node https://api.thegraph.com/deploy/",
     "create-local": "graph create pooltogether/templates --node http://127.0.0.1:8020",
+    "remove-local": "graph remove pooltogether/templates --node http://127.0.0.1:8020",
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy": "graph deploy pooltogether/templates --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy pooltogether/templates --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy-local": "graph deploy pooltogether/templates --ipfs http://localhost:5001 --node http://127.0.0.1:8020 subgraph.local.yaml"
   },
   "devDependencies": {
-    "@graphprotocol/graph-cli": "^0.18.0",
-    "@graphprotocol/graph-ts": "^0.18.0"
+    "@graphprotocol/graph-cli": "0.18.1",
+    "@graphprotocol/graph-ts": "0.18.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",

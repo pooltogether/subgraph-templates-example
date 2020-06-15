@@ -1,0 +1,282 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "moduleManager",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "prizeStrategy",
+        "type": "address"
+      }
+    ],
+    "name": "PrizePoolCreated",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "compoundYieldServiceFactory",
+    "outputs": [
+      {
+        "internalType": "contract CompoundYieldServiceFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract CTokenInterface",
+        "name": "_cToken",
+        "type": "address"
+      },
+      {
+        "internalType": "contract PrizeStrategyInterface",
+        "name": "_prizeStrategy",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_prizePeriodSeconds",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_ticketName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_ticketSymbol",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_sponsorshipName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_sponsorshipSymbol",
+        "type": "string"
+      }
+    ],
+    "name": "createPeriodicPrizePool",
+    "outputs": [
+      {
+        "internalType": "contract PrizePoolModuleManager",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "creditFactory",
+    "outputs": [
+      {
+        "internalType": "contract CreditFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "governor",
+    "outputs": [
+      {
+        "internalType": "contract GovernorInterface",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract PrizePoolModuleManagerFactory",
+        "name": "_prizePoolModuleManagerFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract GovernorInterface",
+        "name": "_governor",
+        "type": "address"
+      },
+      {
+        "internalType": "contract CompoundYieldServiceFactory",
+        "name": "_compoundYieldServiceFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract PeriodicPrizePoolFactory",
+        "name": "_periodicPrizePoolFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract TicketFactory",
+        "name": "_ticketFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract TimelockFactory",
+        "name": "_timelockFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract SponsorshipFactory",
+        "name": "_sponsorshipFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract CreditFactory",
+        "name": "_creditFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract InterestTrackerFactory",
+        "name": "_interestTrackerFactory",
+        "type": "address"
+      },
+      {
+        "internalType": "contract RNGInterface",
+        "name": "_rng",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_trustedForwarder",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "interestTrackerFactory",
+    "outputs": [
+      {
+        "internalType": "contract InterestTrackerFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "periodicPrizePoolFactory",
+    "outputs": [
+      {
+        "internalType": "contract PeriodicPrizePoolFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "prizePoolModuleManagerFactory",
+    "outputs": [
+      {
+        "internalType": "contract PrizePoolModuleManagerFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rng",
+    "outputs": [
+      {
+        "internalType": "contract RNGInterface",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "sponsorshipFactory",
+    "outputs": [
+      {
+        "internalType": "contract SponsorshipFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "ticketFactory",
+    "outputs": [
+      {
+        "internalType": "contract TicketFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "timelockFactory",
+    "outputs": [
+      {
+        "internalType": "contract TimelockFactory",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "trustedForwarder",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

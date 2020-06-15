@@ -1,3 +1,3 @@
-# Example Subgraph
+# Example Subgraph for Dynamic Data Sources / Templates
 
-An example to help you get started with The Graph. For more information see the docs on https://thegraph.com/docs/.
+An example of how to use dynamically created contracts as data sources and entities for The Graph
